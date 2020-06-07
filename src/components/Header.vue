@@ -13,7 +13,7 @@
                     <router-link class="nav-link"  to='/'><font-awesome-icon icon="home" class="mr-2"/>Inicio</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/about"><font-awesome-icon icon="users" class="mr-2"/>Clientes</router-link>
+                    <router-link class="nav-link" to="/customers"><font-awesome-icon icon="users" class="mr-2"/>Clientes</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link class="nav-link" to="/seguimiento"><font-awesome-icon icon="images" class="mr-2"/>Seguimiento</router-link>

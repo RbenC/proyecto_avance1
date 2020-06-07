@@ -1,17 +1,51 @@
 <template>
   <div class="container">
       
-        <div class="d-flex justify-content-between align-items-center colorbarra"  >      
-          USD  <span class="badge badge-info badge-pill">{{dolar | formato}} </span>
-          UF   <span class="badge badge-info badge-pill">{{uf | formato}} </span>
-          UTM  <span class="badge badge-info badge-pill">{{utm | formato}} </span>
-          Euro <span class="badge badge-info badge-pill">{{euro | formato}} </span>
-          IPC  <span class="badge badge-info badge-pill">{{ipc | formato}} </span>
+        <div class="d-flex justify-content-between align-items-center colorbarra">
+        <button class="btn btn-link" data-toggle="modal" data-target="#dolarModal">
+           <span class="badge badge-info badge-pill ">U$D {{dolar | formato}} </span>
+            </button> 
+
+           <span class="badge badge-info badge-pill">UF   {{uf | formato}} </span>
+           <span class="badge badge-info badge-pill">UTM  {{utm | formato}} </span>
+           <span class="badge badge-info badge-pill">Euro {{euro | formato}} </span>
+           <span class="badge badge-info badge-pill">IPC  {{ipc | formato}} </span>
         </div>
+
+
+
+        <!-- dolar Modal -->
+        <div class="modal fade" id="dolarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Valor Dólar en Chile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    ...
+
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- dolar Modal -->
+
 
 
       
   </div>
+
+
+
+
+
+
+
 </template>
 
 <script>
@@ -26,8 +60,6 @@ export default {
             utm:0,
             euro:0,
             ipc:0
-
-            
         }
     },
     methods: {
@@ -55,7 +87,7 @@ export default {
 
 <style>
 .colorbarra {
-    background-color: #91ba7b;
+    background-color: #b2e2e8;
     color:black;
 }
 </style>
