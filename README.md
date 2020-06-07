@@ -27,5 +27,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # proyecto_avance1
 Inicio del proyecto grado
 
-Aplicación para registrar potenciales clientes para instalación de plantas fotovoltaicas en sus empresas
+Aplicación para registrar potenciales clientes para instalación de plantas fotovoltaicas en sus empresas.  Haciendo uso de energía solar versus energía convencional. 
+
 >>>>>>> be9717fa2ecbc15ee377ada74ba9180df8912033
